@@ -1,0 +1,9 @@
+# Visual Studio
+.vs
+
+# Virtual Environment
+.venv
+
+# Environment File
+.env
+
