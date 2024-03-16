@@ -1,1 +1,1 @@
-from events import on_ready, bot_login
+from .events import on_ready, bot_login
