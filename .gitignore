@@ -1,13 +1,16 @@
 # Visual Studio
-.vs
+.vs/
 
 # Virtual Environment
-.venv
+.venv/
 
 # Environment File
 .env
 
-# Specific VS Project Files
+# Specific VS/VSC Project Files/Folders
 *.pyproj
 *.user
 *.sln
+
+# Specific PyCharm Project Files/Folders
+.idea/
