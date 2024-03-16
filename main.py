@@ -1,7 +1,7 @@
 import os
 import asyncio
 from dotenv import load_dotenv
-from events import bot_login, on_ready
+from logic import bot_login, on_ready
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
