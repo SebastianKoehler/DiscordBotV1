@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd36bde1-53d9-4eca-b41a-a90638f701c9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DiscordBotV1.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>DiscordBotV1</Name>
     <RootNamespace>DiscordBotV1</RootNamespace>
+    <InterpreterId>MSBuild|DiscordBotV1|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DiscordBotV1.py" />
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include=".">
+      <Id>DiscordBotV1</Id>
+      <Version>3.12</Version>
+      <Description>DiscordBotV1</Description>
+      <InterpreterPath>.venv\Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>.venv\Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

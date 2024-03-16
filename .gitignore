@@ -7,3 +7,7 @@
 # Environment File
 .env
 
+# Specific VS Project Files
+*.pyproj
+*.user
+*.sln
