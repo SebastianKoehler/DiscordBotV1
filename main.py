@@ -1,25 +1,16 @@
 import os
+import asyncio
 from dotenv import load_dotenv
-from discord import Intents, Client
-
+from events import bot_login, on_ready
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 
-intents: Intents = Intents.default()
-intents.message_content = True # NOQA
-client: Client = Client(intents=intents)
-
-
-@client.event
-async def on_ready() -> None:
-    print(f'{client.user} is now running!')
-
-
-def main() -> None:
-    client.run(token=TOKEN)
+async def main() -> None:
+    await bot_login(TOKEN)
+    await on_ready()
 
 
 if __name__ == '__main__':
-    main()
+    asyncio.run(main())

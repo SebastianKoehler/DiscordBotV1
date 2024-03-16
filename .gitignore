@@ -1,11 +1,11 @@
-# Visual Studio
-.vs/
+# Environment File
+.env
 
 # Virtual Environment
 .venv/
 
-# Environment File
-.env
+# Visual Studio
+.vs/
 
 # Specific VS/VSC Project Files/Folders
 *.pyproj
@@ -14,3 +14,6 @@
 
 # Specific PyCharm Project Files/Folders
 .idea/
+
+# Ignore Python cache files
+__pycache__/
