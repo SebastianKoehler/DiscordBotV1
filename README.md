@@ -1,8 +1,9 @@
 > [!IMPORTANT]  
 > I am using a .env file and python-dotenv package. \
 > If you want to use this bot, please create a new token and: \
-> 1. Create a new .env file and insert it as: DISCORD_TOKEN='YourToken'
-> 2. Go to main.py, at line 7 change the constant to TOKEN = 'YourToken'
+> - Create a new .env file and insert it as: DISCORD_TOKEN='YourToken' \
+> or
+> - Go to main.py, at line 7, change the constant to TOKEN = 'YourToken'
 
 # User Guide (Venv & requirements.txt)
 
